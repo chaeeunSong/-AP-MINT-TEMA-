@@ -1,0 +1,329 @@
+* {
+    margin:0; padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/*input[type=checkbox]{*/
+/*    width:16px;*/
+/*    height: 16px;*/
+/*}*/
+
+
+/************************* Login Page ****************************/
+
+.login_bg{
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(180deg, #00b2cc, #83dce4);
+    /*height: 100vh;*/
+}
+section{
+    width:50%;
+    float: left;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+.login_box{
+    width:70%;
+    margin:0 auto;
+    padding-top:70px;
+    padding-bottom:70px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+}
+
+.login_logo{
+    width:100%;
+    overflow: hidden;
+    margin-bottom:70px;
+}
+
+.login_logo img{
+    display: block;
+    margin: 0 auto;
+    width:250px;
+}
+
+.login_input{
+    width:80%;
+    margin: 0 auto;
+}
+
+.login_id{
+    width:100%;
+    overflow: hidden;
+    margin-bottom:20px;
+}
+
+.login_id label{
+    display: block;
+    width:100%;
+    float: left;
+    margin-bottom:10px;
+}
+
+.login_id input[type=text]{
+    width:95%;
+    height: 50px;
+    border:0;
+    background: #eee;
+    padding-left:5%;
+    border-radius: 10px;
+}
+
+.login_pw{
+    width:100%;
+    overflow: hidden;
+    margin-bottom:20px;
+}
+
+.login_pw label{
+    display: block;
+    width:100%;
+    float: left;
+    margin-bottom:10px;
+}
+
+.login_pw input[type=password]{
+    width:95%;
+    height: 50px;
+    border:0;
+    background: #eee;
+    padding-left:5%;
+    border-radius: 10px;
+}
+
+.login_input input:focus {outline: none;}
+
+.login_btn{
+    width:100%;
+    overflow: hidden;
+    height: 50px;
+    background: #555555;
+    color: #fff;
+    border:0;
+    border-radius: 10px;
+    font-size:16px;
+    margin-bottom:20px;
+}
+
+.login_ani{
+    width: 660px;
+    overflow: hidden;
+}
+
+.login_tit{
+    width:100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.login_tit span{
+    font-size:50px;
+    font-weight: 100;
+    color:#fff;
+}
+
+.login_tit p{
+    color: #fff;
+    font-size:18px;
+    font-weight: 300;
+}
+
+.login_tit p:nth-of-type(1){
+    margin-top:10px;
+}
+
+.login_action {
+    position: relative;
+    animation: fadeInDown 1.2s;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+
+.login_img_wrap{
+    width:100%;
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+}
+
+.login_img_wrap img{display:block; width:100%;}
+
+.login_img_wrap .setting_img{
+    position: absolute;
+    width:30%;
+    z-index: 0;
+    left:0%;
+    top:30%;
+    transform:translate(-0%,-30%);
+}
+
+.login_img_wrap .setting_img img{
+    animation: rotate_image 10s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+.login_img_wrap .setting_img2{
+    position: absolute;
+    width:30%;
+    z-index: 1;
+    left:20%;
+    top:0%;
+    transform:translate(-20%,-0%);
+}
+
+.login_img_wrap .setting_img2 img{
+    animation: rotate_image 10s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.login_img_wrap .dash_img{
+    position: absolute;
+    z-index: 2;
+    width:65%;
+    left:40%;
+    top:50%;
+    transform:translate(-40%,-50%);
+}
+
+.login_img_wrap .headset_img{
+    position: absolute;
+    z-index: 3;
+    width:30%;
+    right:10%;
+    top:15%;
+    transform:translate(-10%,-15%);
+}
+
+.login_img_wrap .phone_img{
+    position: absolute;
+    z-index: 4;
+    width:35%;
+    left:0%;
+    bottom:0%;
+    transform:translate(-0%,-0%);
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }
+}
+
+.login_action2 {
+    position: relative;
+    animation: fadeInDown 1.6s;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -20%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+
+
+/******************************** Media Query ***********************************/
+
+@media screen and (min-width: 1600px) {
+
+    .login_box{
+        width:60%;
+        margin:0 auto;
+        padding-top:100px;
+        padding-bottom:100px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+    }
+
+    .login_ani{
+        width: 1000px;
+        overflow: hidden;
+    }
+
+    .login_img_wrap{
+        width:100%;
+        overflow: hidden;
+        position: relative;
+        height: 700px;
+    }
+
+    .login_img_wrap .setting_img{
+        position: absolute;
+        width:30%;
+        z-index: 0;
+        left:0%;
+        top:30%;
+        transform:translate(-0%,-30%);
+    }
+
+    .login_img_wrap .setting_img2{
+        position: absolute;
+        width:30%;
+        z-index: 1;
+        left:20%;
+        top:0%;
+        transform:translate(-20%,-0%);
+    }
+
+    .login_img_wrap .dash_img{
+        position: absolute;
+        z-index: 2;
+        width:60%;
+        left:40%;
+        top:50%;
+        transform:translate(-40%,-50%);
+    }
+
+    .login_img_wrap .headset_img{
+        position: absolute;
+        z-index: 3;
+        width:30%;
+        right:10%;
+        top:15%;
+        transform:translate(-10%,-15%);
+    }
+
+    .login_img_wrap .phone_img{
+        position: absolute;
+        z-index: 4;
+        width:35%;
+        left:0%;
+        bottom:0%;
+        transform:translate(-0%,-0%);
+    }
+
+}
